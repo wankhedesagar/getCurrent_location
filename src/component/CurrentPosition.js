@@ -34,6 +34,19 @@ const CurrentPosition = () => {
     getUserAddress();
   };
 
+
+    //Get User GPS Current Location
+    geo.watchPosition(userGPSCoords);
+    function userGPSCoords(position) {
+      let userGPSLatitude = position.coords.latitude;
+      let useGPSLongitude = position.coords.longitude;
+      console.log("latitude", userGPSLatitude);
+      console.log("longitude", useGPSLongitude);
+      setGPSLatitude(userGPSLatitude);
+      setGPSLongitude(useGPSLongitude);
+    }
+  
+
   return (
     <div className="container">
       <div className="Current_location">
@@ -45,6 +58,8 @@ const CurrentPosition = () => {
       </div>
       <div className="gpsTracker">
         <h1>GPS Tracking</h1>
+        <h2>Latitude:- {GPSLatitude}</h2>
+          <h2>Longitude:- {GPSLongitude}</h2>
       </div>
     </div>
   );

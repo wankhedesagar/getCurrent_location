@@ -45,3 +45,8 @@ h2 {
   margin-top: 5px;
   text-align: center;
 }
+
+.gpsTracker h1,
+h2 {
+  padding: 6px;
+}

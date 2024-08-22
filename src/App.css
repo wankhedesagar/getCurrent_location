@@ -37,3 +37,11 @@ body {
 h2 {
   padding: 6px;
 }
+
+.gpsTracker {
+  background-color: wheat;
+  width: 500px;
+  height: 300px;
+  margin-top: 5px;
+  text-align: center;
+}

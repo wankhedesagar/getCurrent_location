@@ -5,6 +5,9 @@ const CurrentPosition = () => {
   const [longitude, setLongitude] = useState();
   const [userAddress, setUserAddress] = useState();
 
+  const [GPSLatitude, setGPSLatitude] = useState();
+  const [GPSLongitude, setGPSLongitude] = useState();
+
   const geo = navigator.geolocation;
 
   //Get User Current Location
